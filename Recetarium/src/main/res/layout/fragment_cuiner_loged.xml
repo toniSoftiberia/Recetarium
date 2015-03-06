@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity$PlaceholderFragment">
+
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:scaleType="centerCrop"
+    android:src="@drawable/fondo" />
+<ScrollView android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- se colocal el LinearLayout que contendra el formulario -->
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/usr_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#21610B"
+            android:layout_marginTop="15dip"
+            android:gravity="center"
+            android:textSize="25dip"
+            />
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:singleLine="true"
+            android:id="@+id/cuiner_telefon"
+            android:hint="Telèfon"
+            android:background="@drawable/edittext_rounded_corners"
+            />
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:id="@+id/cuiner_alias"
+            android:hint="Àlias"
+            android:background="@drawable/edittext_rounded_corners"
+            />
+
+        <TextView android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:singleLine="true"
+            android:id="@+id/cuiner_email"
+            android:hint="E-mail"
+            android:background="@drawable/edittext_rounded_corners"
+            />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/cuiner"
+            android:id="@+id/cuiner_img"
+            android:layout_marginTop="15dip"
+            android:gravity="center"	>
+        </ImageView>
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

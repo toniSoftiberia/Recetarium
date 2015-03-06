@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="categoria">
+        <item>Tria una opció</item>
+        <item>Amanides</item>
+        <item>Aperitius</item>
+        <item>Arrossos</item>
+        <item>Aus</item>
+        <item>Begudes</item>
+        <item>Carns</item>
+        <item>Cuina rapida</item>
+        <item>Entrepans</item>
+        <item>Llegums i verdures</item>
+        <item>Rebosteria</item>
+        <item>Pastes</item>
+        <item>Pures i farinetes</item>
+        <item>Peix i marisc</item>
+        <item>Postres</item>
+        <item>Receptes per nadons</item>
+        <item>Salses</item>
+        <item>Sopes</item>
+        <item>Altres</item>
+    </string-array>
+    <string-array name="idioma_recepta">
+        <item>Tria una opció</item>
+        <item>Català</item>
+        <item>Castellà</item>
+        <item>Basc</item>
+        <item>Gallec</item>
+        <item>Anglès</item>
+    </string-array>
+    <string-array name="idioma_interficie:">
+        <item>Català</item>
+        <item>Castella</item>
+    </string-array>
+    <string-array name="metode_coccio">
+        <item>Tria una opció</item>
+        <item>Forn</item>
+        <item>Planxa</item>
+        <item>Brasa</item>
+        <item>Bullit</item>
+        <item>Escalfat</item>
+        <item>Estofat</item>
+        <item>Fregit</item>
+        <item>Guisat</item>
+        <item>Saltejat</item>
+        <item>Vapor</item>
+        <item>Altres</item>
+    </string-array>
+    <string-array name="tipus_plat">
+        <item>Tria una opció</item>
+        <item>Entrant</item>
+        <item>Primer</item>
+        <item>Segon</item>
+        <item>Postres</item>
+        <item>Plat únic</item>
+        <item>Guarnició</item>
+    </string-array>
+    <string-array name="dificultat">
+        <item>Tria una opció</item>
+        <item>Molt fàcil</item>
+        <item>Fàcil</item>
+        <item>Mitja</item>
+        <item>Difícil</item>
+        <item>Molt difícil</item>
+    </string-array>
+    <string-array name="escales">
+        <item>--</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Litres</item>
+        <item>Mililitres</item>
+        <item>Unitats</item>
+        <item>Dotzenes</item>
+        <item>Cullerades</item>
+        <item>Culleradeta</item>
+        <item>Polsim</item>
+    </string-array>
+</resources>

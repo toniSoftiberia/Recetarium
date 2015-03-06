@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- se colocal el LinearLayout que contendra el formulario -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:id="@+id/old_password"
+                android:hint="Contrasenya antiga"
+                android:background="@drawable/edittext_rounded_corners"
+                />
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:id="@+id/new_password"
+                android:hint="Contrasenya"
+                android:background="@drawable/edittext_rounded_corners"
+                />
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:id="@+id/new_password2"
+                android:hint="Replicar contrasenya"
+                android:background="@drawable/edittext_rounded_corners"
+                />
+
+             <Button
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="Canviar contrasenya"
+                android:id="@+id/BModPass"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

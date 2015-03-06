@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.70"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/cr_idins"
+                android:gravity="left"
+                android:text = "Instrucció: 0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:enabled="false"
+                android:text="-"
+                android:id="@+id/Btreure"
+                android:background="@drawable/edittext_rounded_corners_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:enabled="false"
+                android:text="M"
+                android:id="@+id/BMod"
+                android:background="@drawable/edittext_rounded_corners_button"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.10"
+            android:orientation="horizontal" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="+"
+                android:id="@+id/BAfegir"
+                android:background="@drawable/edittext_rounded_corners_button"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dip">
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:gravity="top|left"
+                android:singleLine="false"
+                android:id="@+id/cr_ins"
+                android:hint="Detall de l'instrucció"
+                android:background="@drawable/edittext_rounded_corners"/>
+    </LinearLayout>
+</LinearLayout>

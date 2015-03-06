@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- se colocal el LinearLayout que contendra el formulario -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+>
+
+            <!--  Logo -->
+
+            <ImageView android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:id="@+id/img"
+                android:layout_width="fill_parent"
+                android:layout_marginTop="15dip"
+                android:gravity="center"	>
+            </ImageView>
+
+            <!--  Email Label -->
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:singleLine="true"
+                android:id="@+id/edusuario"
+                android:hint="Usuari"
+                android:background="@drawable/edittext_rounded_corners"
+                />
+
+            <!--  Password Label -->
+
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:password="true"
+                android:id="@+id/edpassword"
+                android:hint="Contrasenya"
+                android:background="@drawable/edittext_rounded_corners"
+                />
+
+            <!-- Login button -->
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="Login"
+                android:id="@+id/Blogin"
+                />
+
+            <!-- Link to forgot passw -->
+
+            <CheckBox
+                android:id="@+id/checkPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Recordar contrasenya"
+                android:textColor="#372c24"/>
+            <CheckBox
+                android:id="@+id/autoLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Autologin"
+                android:textColor="#372c24"/>
+
+            <TextView android:id="@+id/forgotpassw"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:layout_marginBottom="20dip"
+                android:text="Has oblidat la contrasenya?"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#372c24"/>
+
+            <!-- Link to Registration Screen -->
+
+            <TextView android:id="@+id/link_to_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar-se!"
+                android:gravity="center"
+                android:textSize="20dip"
+                android:textColor="#8A0808"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

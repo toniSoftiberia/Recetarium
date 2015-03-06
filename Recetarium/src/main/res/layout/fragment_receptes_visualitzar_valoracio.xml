@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center|left"
+    android:orientation="horizontal" >
+    <LinearLayout
+        android:id="@+id/l_status"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.025"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.975"
+    android:gravity="center|left"
+    android:orientation="vertical" >
+
+    <TextView
+    android:id="@+id/tv_autor"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="5dp"
+    android:text="Medium Text"
+    android:gravity="center_vertical"
+    android:textAlignment="center"
+    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <RatingBar
+        style="@style/tenedorRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:isIndicator="true"
+        android:id="@+id/rb_valoracio"/>
+
+    <TextView
+        android:id="@+id/tv_comentari"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dp"
+        android:text="Comentari"
+        android:gravity="center_vertical"
+        android:textAlignment="center" />
+</LinearLayout>
+</LinearLayout>

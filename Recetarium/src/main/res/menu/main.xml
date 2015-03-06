@@ -1,0 +1,100 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:icon="@drawable/ic_action_menu">
+
+    <item android:id="@+id/modificar_dades"
+        android:title="@string/modificar_dades"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/modificar_pass"
+        android:title="@string/modificar_pass"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/visualitzar_not"
+        android:title="@string/visualitzar_not"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/actualitzar_cont"
+        android:title="@string/actualitzar_cont"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/tancar_sessio"
+        android:title="@string/tancar_sessio"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/visualitzar_rec"
+        android:title="@string/visualitzar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/vista_rec"
+        android:title="@string/vista_rec"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/modificar_rec"
+        android:title="@string/modificar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/eliminar_rec"
+        android:title="@string/eliminar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/cercar_rec"
+        android:icon="@drawable/ic_buscar"
+        android:title="@string/cercar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:visible="false" />
+
+    <item android:id="@+id/cercar_rec_prop"
+        android:icon="@drawable/ic_buscar"
+        android:title="@string/cercar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:visible="false" />
+
+    <item android:id="@+id/crear_rec"
+        android:icon="@drawable/ic_crear"
+        android:title="@string/crear_rec"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:visible="false" />
+
+    <item android:id="@+id/valorar_rec"
+        android:title="@string/valorar_rec"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/compartir_rec"
+        android:icon="@drawable/ic_compartir"
+        android:title="@string/compartir_rec"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:visible="false" />
+
+    <item android:id="@+id/notPen"
+        android:icon="@drawable/ic_action_0"
+        android:title="@string/compartir_rec"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:visible="false" />
+
+</menu>

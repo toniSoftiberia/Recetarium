@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+                android:layout_weight="0.09">
+                <TextView
+                    android:id="@+id/titol"
+                    android:text="Llistat de notificacions"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#21610B"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:textSize="25dip"
+                    />
+                <TextView
+                    android:id="@+id/nonotificacions"
+                    android:text="No disposes de cap notificacio"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#21610B"
+                    android:layout_marginTop="15dip"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="20dip"
+                    />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+                android:layout_weight="0.41">
+                <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/ListView_listado"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </ListView>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.09">
+                <TextView
+                    android:id="@+id/titol2"
+                    android:text="Llistat de receptes rebudes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#21610B"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:textSize="25dip"
+                    />
+                <TextView
+                    android:id="@+id/norebudes"
+                    android:text="No has rebut cap recepta"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#21610B"
+                    android:layout_marginTop="15dip"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="20dip"
+                    />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.41">
+                <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/ListView_rebudes"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+                </ListView>
+            </LinearLayout>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="Eliminar les receptes rebudes"
+                android:id="@+id/Belinot"
+                />
+        </LinearLayout>
+</RelativeLayout>

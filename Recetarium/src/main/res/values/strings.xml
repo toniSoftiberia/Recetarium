@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Recetarium</string>
+    <string name="title_section1">Suggeriments</string>
+    <string name="title_section2">Cercador</string>
+    <string name="title_section3">Receptari</string>
+    <string name="title_section4">Perfil</string>
+    <string name="tancar_sessio">Tancar sessió</string>
+    <string name="actualitzar_cont">Actualitzar contactes</string>
+    <string name="modificar_pass">Modificar contrasenya</string>
+    <string name="modificar_dades">Modificar dades</string>
+    <string name="visualitzar_not">Visualitzar notificacions</string>
+    <string name="modificar_rec">Modificar recepta</string>
+    <string name="eliminar_rec">Eliminar recepta</string>
+    <string name="compartir_rec">Compartir receptes</string>
+    <string name="visualitzar_rec">Receptes pròpies</string>
+    <string name="vista_rec">Visualitzar recepta</string>
+    <string name="cercar_rec">Cercar receptes</string>
+    <string name="crear_rec">Crear recepta</string>
+    <string name="valorar_rec">Valorar recepta</string>
+    <string name="navigation_drawer_open">Menú obert</string>
+    <string name="navigation_drawer_close">Menú tancat</string>
+</resources>

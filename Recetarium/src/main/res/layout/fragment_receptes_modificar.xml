@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_vertical"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+    <ScrollView android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <!-- se colocal el LinearLayout que contendra el formulario -->
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:id="@+id/titol"
+                android:text="Modificar la recepta"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#21610B"
+                android:gravity="center"
+                android:textSize="25dip"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text = "Dades generals:"
+                android:layout_marginTop="20dip"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Títol:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <EditText android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:singleLine="true"
+                        android:id="@+id/rc_titol"
+                        android:hint="Títol"
+                        android:background="@drawable/edittext_rounded_corners"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Categoria:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_cat"
+                        android:background="@drawable/edittext_rounded_corners"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_coc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Mètode de cocció:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_coc"
+                        android:background="@drawable/edittext_rounded_corners"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_tip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Tipus de plat:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_tip"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/edittext_rounded_corners"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_tem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Temps requerit:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <EditText android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.25"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:id="@+id/rc_temph"
+                        android:hint="--"
+                        android:background="@drawable/edittext_rounded_corners" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.05"
+                        android:text = "H*" />
+                    <EditText android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.25"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:id="@+id/rc_temm"
+                        android:hint="--"
+                        android:background="@drawable/edittext_rounded_corners" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.07"
+                        android:text = "min" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_cos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Cost aproximat(€):" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <EditText android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:id="@+id/rc_cost"
+                        android:hint="--"
+                        android:background="@drawable/edittext_rounded_corners" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_idi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Idioma:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_idi"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/edittext_rounded_corners"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_com"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Nº començals:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <EditText android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:id="@+id/rc_comen"
+                        android:hint="--"
+                        android:background="@drawable/edittext_rounded_corners" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_dif"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dip">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text = "Dificultat:" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.52"
+                    android:orientation="horizontal" >
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_dif"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/edittext_rounded_corners"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text = "Fotografia:*"
+                android:layout_marginTop="20dip"/>
+            <ImageView
+                android:src="@drawable/receta"
+                android:id="@+id/recepta_img"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="10dip"
+                android:gravity="center"	>
+            </ImageView>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text = "Ingredients:"
+                android:layout_marginTop="20dip"/>
+            <LinearLayout
+                android:id="@+id/lay_ing"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dip">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text = "Instruccions:"
+                android:layout_marginTop="20dip"/>
+            <LinearLayout
+                android:id="@+id/lay_ins"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="5dip">
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lay_obs"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="20dip">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text = "Observacions:" />
+                <EditText android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:gravity="top|left"
+                    android:singleLine="false"
+                    android:id="@+id/rc_obs"
+                    android:hint="Detall de l'observació"
+                    android:background="@drawable/edittext_rounded_corners"
+                    android:layout_marginTop="5dip"/>
+            </LinearLayout>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dip"
+                android:text="Modificar recepta"
+                android:id="@+id/Brcrear"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text = "(*) Camps no obligatoris" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
